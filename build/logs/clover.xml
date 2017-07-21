@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1499950601">
+  <project timestamp="1499950601">
+    <package name="Hash">
+      <file name="/home/feighen/workspace/cli/src/Hash.php">
+        <class name="Hash" namespace="Hash">
+          <metrics complexity="3" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="1" elements="6" coveredelements="2"/>
+        </class>
+        <line num="19" type="method" name="hash" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="31" type="method" name="checkHash" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <metrics loc="38" ncloc="19" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="1" elements="6" coveredelements="2"/>
+      </file>
+      <file name="/home/feighen/workspace/cli/src/HashCommand.php">
+        <class name="HashCommand" namespace="Hash">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+        </class>
+        <line num="21" type="method" name="configure" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="method" name="execute" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+      </file>
+    </package>
+    <package name="Noondaysun\Cli">
+      <file name="/home/feighen/workspace/cli/src/Replication.php">
+        <class name="Replication" namespace="Noondaysun\Cli">
+          <metrics complexity="7" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="24" coveredelements="0"/>
+        </class>
+        <line num="17" type="method" name="getConfig" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="22" type="method" name="setConfig" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="27" type="method" name="makeDatabaseConnections" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="33" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="36" type="method" name="__destruct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="41" type="method" name="__sleep" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <metrics loc="46" ncloc="33" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="24" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="3" loc="121" ncloc="83" classes="3" methods="10" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="10" elements="41" coveredelements="13"/>
+  </project>
+</coverage>

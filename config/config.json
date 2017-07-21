@@ -1,0 +1,19 @@
+{
+	"Replication": {
+		"hilt-dbmaster": {
+			"dsn": "mysql:host=hilt-dbmaster.bwt.local;dbname=max2;charset=utf8;", 
+			"user":"bwtrans", 
+			"password":"115kke9Hua"
+		},
+		"hilt-dbslave": {
+			"dsn": "mysql:host=hilt-dbslave.bwt.local;dbname=max2;charset=utf8;", 
+			"user":"bwtrans", 
+			"password":"115kke9Hua"
+		},
+		"mkon-dbslave":{
+			"dsn": "mysql:host=mkon-dbslave.bwt.local;dbname=max2;charset=utf8;", 
+			"user":"bwtrans", 
+			"password":"115kke9Hua"
+		}
+	}
+}

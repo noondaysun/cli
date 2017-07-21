@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="cli" tests="2" assertions="1" failures="0" errors="0" time="0.115215">
+    <testsuite name="HashCommandTest" file="/home/feighen/workspace/cli/tests/HashCommandTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.112558">
+      <testcase name="testHashIsCorrect" class="HashCommandTest" file="/home/feighen/workspace/cli/tests/HashCommandTest.php" line="17" assertions="1" time="0.112558"/>
+    </testsuite>
+    <testsuite name="Noondaysun\Cli\ReplicationTest" file="/home/feighen/workspace/cli/tests/ReplicationTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.002657">
+      <testcase name="Warning" assertions="0" time="0.002657"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

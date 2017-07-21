@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2017-07-13 14:56:41</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>10</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>25</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>Hash</package>
+      <className>Hash</className>
+      <methodName>hash</methodName>
+      <methodSignature>hash($password)</methodSignature>
+      <fullMethod>hash($password)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Hash</package>
+      <className>Hash</className>
+      <methodName>checkHash</methodName>
+      <methodSignature>checkHash($string, $hash)</methodSignature>
+      <fullMethod>checkHash($string, $hash)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Hash</package>
+      <className>HashCommand</className>
+      <methodName>configure</methodName>
+      <methodSignature>configure()</methodSignature>
+      <fullMethod>configure()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Hash</package>
+      <className>HashCommand</className>
+      <methodName>execute</methodName>
+      <methodSignature>execute(InputInterface $input, OutputInterface $output)</methodSignature>
+      <fullMethod>execute(InputInterface $input, OutputInterface $output)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Cli</package>
+      <className>Replication</className>
+      <methodName>getConfig</methodName>
+      <methodSignature>getConfig(): array</methodSignature>
+      <fullMethod>getConfig(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Cli</package>
+      <className>Replication</className>
+      <methodName>setConfig</methodName>
+      <methodSignature>setConfig(array $config)</methodSignature>
+      <fullMethod>setConfig(array $config)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Cli</package>
+      <className>Replication</className>
+      <methodName>makeDatabaseConnections</methodName>
+      <methodSignature>makeDatabaseConnections(): bool</methodSignature>
+      <fullMethod>makeDatabaseConnections(): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Cli</package>
+      <className>Replication</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Cli</package>
+      <className>Replication</className>
+      <methodName>__destruct</methodName>
+      <methodSignature>__destruct()</methodSignature>
+      <fullMethod>__destruct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Noondaysun\Cli</package>
+      <className>Replication</className>
+      <methodName>__sleep</methodName>
+      <methodSignature>__sleep(): array</methodSignature>
+      <fullMethod>__sleep(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

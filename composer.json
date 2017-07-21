@@ -1,0 +1,34 @@
+{
+	"autoload": {
+        "psr-4": {
+            "Noondaysun\\Cli\\": "src/",
+            "Hash\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noondaysun\\Cli\\": "tests/",
+            "Hash\\": "tests/"
+        }
+    },
+    "description": "Command Line utilities",
+    "homepage": "https://github.com/noondaysun/cli",
+    "license": "GNU GPL v2.0",
+    "name": "noondaysun/cli",
+    "require-dev": {
+        "mayflower/php-codebrowser": "~1.1",
+        "pdepend/pdepend" : "2.3.2",
+        "pds/skeleton": "^1.0",
+        "phploc/phploc": "*",
+        "phpmd/phpmd" : "@stable",
+        "phpunit/phpunit": "~5.1",
+        "sebastian/phpcpd": "*",
+        "squizlabs/php_codesniffer": "~2.5.0"
+		
+    },
+    "require": {
+    	"php": "^7.0",
+        "symfony/console": "^3.3"
+    },
+    "type": "package"
+}
