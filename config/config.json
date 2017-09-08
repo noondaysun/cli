@@ -15,5 +15,12 @@
 			"user":"bwtrans", 
 			"password":"115kke9Hua"
 		}
+	},
+	"Syspro": {
+		"hilt-dbslave": {
+			"dsn": "mysql:host=hilt-dbslave.bwt.local;dbname=max2;charset=utf8;", 
+			"user":"bwtrans", 
+			"password":"115kke9Hua"
+		}
 	}
 }
