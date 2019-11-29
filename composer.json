@@ -30,5 +30,8 @@
         "roave/security-advisories": "dev-master",
         "symfony/console": "^3.3"
     },
+    "scripts": {
+        "test": "phpunit"
+    },
     "type": "package"
 }

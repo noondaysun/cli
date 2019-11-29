@@ -1,9 +1,9 @@
 <?php
+
 use Hash\HashCommand;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
-
-require_once './vendor/autoload.php';
 
 /**
  * From: https://www.sitepoint.com/re-introducing-symfony-console-cli-php-uninitiated/
@@ -11,10 +11,10 @@ require_once './vendor/autoload.php';
  * @author Cláudio Ribeiro
  *
  */
-class HashCommandTest extends \PHPUnit_Framework_TestCase
+class HashCommandTest extends TestCase
 {
 
-    public function testHashIsCorrect()
+    public function testHashIsCorrect(): void
     {
         $application = new Application();
         $application->add(new HashCommand());
