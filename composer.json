@@ -1,5 +1,5 @@
 {
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "Noondaysun\\Cli\\": "src/",
             "Hash\\": "src/"
@@ -16,18 +16,18 @@
     "license": "GNU GPL v2.0",
     "name": "noondaysun/cli",
     "require-dev": {
-        "mayflower/php-codebrowser": "~1.1",
-        "pdepend/pdepend" : "2.3.2",
+        "mayflower/php-codebrowser": "^2.2",
+        "pdepend/pdepend" : "^2.5",
         "pds/skeleton": "^1.0",
         "phploc/phploc": "*",
-        "phpmd/phpmd" : "@stable",
-        "phpunit/phpunit": "~5.1",
-        "sebastian/phpcpd": "*",
-        "squizlabs/php_codesniffer": "~2.5.0"
-		
+        "phpmd/phpmd" : "^2.7",
+        "phpunit/phpunit": "^8.4",
+        "sebastian/phpcpd": "^4.1",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "require": {
-    	"php": "^7.0",
+        "php": "^7.2",
+        "roave/security-advisories": "dev-master",
         "symfony/console": "^3.3"
     },
     "type": "package"
