@@ -28,9 +28,11 @@
     "require": {
         "php": "^7.2",
         "roave/security-advisories": "dev-master",
-        "symfony/console": "^3.3"
+        "symfony/console": "^3.3",
+        "vimeo/psalm": "^3.7"
     },
     "scripts": {
+        "psalm": "psalm",
         "test": "phpunit"
     },
     "type": "package"
