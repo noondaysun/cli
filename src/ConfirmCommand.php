@@ -18,7 +18,7 @@ use Hash\Hash;
 class ConfirmCommand extends Command
 {
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName("Hash:Confirm")
             ->setDescription("Confirms an Hash given the string.")
@@ -26,7 +26,7 @@ class ConfirmCommand extends Command
             ->addArgument('Hash', InputArgument::REQUIRED, 'What is the hashyou want to confirm?');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): void
     {
         $hash = new Hash();
         $inputPassword = $input->getArgument('Password');
@@ -36,7 +36,7 @@ class ConfirmCommand extends Command
         
         if ($result) {
             $output->writeln('The hash belongs to the password!');
-            return true;
+            return;
         }
         
         $output->writeln('The hash does not belong to the password!');

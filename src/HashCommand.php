@@ -18,20 +18,20 @@ use Hash\Hash;
 class HashCommand extends Command
 {
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName("Hash:Hash")
             ->setDescription("Hashes a given string using Bcrypt.")
             ->addArgument('Password', InputArgument::REQUIRED, 'What do you wish to hash)');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): void
     {
         $hash = new Hash();
         $input = $input->getArgument('Password');
         
         $result = $hash->hash($input);
         
-        $output->writeln('Your password hashed: ' . $result);
+        $output->writeln("Your password hashed: {$result}");
     }
 }

@@ -1,6 +1,8 @@
 <?php
 namespace BWT;
 
+use Symfony\Component\Filesystem\Exception\FileNotFoundException;
+
 /**
  * @package BWT\Syspro
  * @author Feighen Oosterbroek <foosterbroek@bwtrans.co.za>
@@ -14,15 +16,20 @@ class Syspro
     //: Functions
     /**
      * Check to see if specific trips have been sent into syspro, or have errors
+     *
+     * @throws FileNotFoundException
+     * @throws \Exception
      */
-    public function checkIfTripsHaveBeenSentToSyspro()
+    public function checkIfTripsHaveBeenSentToSyspro(): void
     {
         $file = (string) __DIR__ . DIRECTORY_SEPARATOR . "../config/config.json";
+
         if (is_file($file) && is_readable($file)) {
             $config = json_decode(file_get_contents($file), true);
         } else {
-            throw new \FileNotFoundException("Could not successfully parse configuration file");
+            throw new FileNotFoundException("Could not successfully parse configuration file");
         }
+
         if (!isset($config) || !is_array($config) || !$config) {
             throw new \Exception('Could not find a valid configuration file.');
         }
