@@ -18,16 +18,13 @@ use Noondaysun\Cli\Replications;
 class ReplicationCommand extends Command
 {
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName("Replication:checkReplication")->setDescription("Check replication in a mysql master::slave setup");
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): void
     {
-        $repl = new Replication();
-        $data = $repl->checkReplication();
-        
-        print_r($data);
+        (new Replication())->checkReplication();
     }
 }
