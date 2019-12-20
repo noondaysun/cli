@@ -1,0 +1,20 @@
+name: tests
+on:
+  push:
+    paths:
+      - src
+      - tests
+  pull_request:
+    paths:
+      - src
+      - tests
+
+jobs:
+  build:
+    name: Code_Quality
+
+    strategy:
+      matrix:
+        runs-on: [ubuntu-latest, macOS-latest, windows-latest]
+    
+      fail-fast: true
