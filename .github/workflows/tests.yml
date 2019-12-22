@@ -12,9 +12,17 @@ on:
 jobs:
   build:
     name: Code_Quality
-
     strategy:
       matrix:
-        runs-on: [ubuntu-latest, macOS-latest, windows-latest]
-    
-      fail-fast: true
+        operating-system: [ubuntu-latest, windows-latest, macOS-latest]
+        php-versions: [7.2, 7.3, 7.4]
+    runs-on: ${{ matrix.operating-system }}
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@a507be7
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extension-csv: 'xdebug'
+      - name: Composer Install
+        run: composer install -o
+
