@@ -14,9 +14,9 @@ jobs:
     name: Code_Quality
     strategy:
       matrix:
-        operating-system: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
         php-versions: [7.2, 7.3, 7.4]
-    runs-on: ${{ matrix.operating-system }}
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Setup PHP
         uses: shivammathur/setup-php@a507be7
