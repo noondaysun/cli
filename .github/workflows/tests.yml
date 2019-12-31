@@ -1,10 +1,16 @@
 name: tests
 on:
   push:
+    branches:
+      - master
+      - feighen/*
+      - feature/*
     paths:
       - src
       - tests
   pull_request:
+    branches:
+      - master
     paths:
       - src
       - tests
