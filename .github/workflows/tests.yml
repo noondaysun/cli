@@ -18,10 +18,7 @@ jobs:
         php-versions: [7.2, 7.3, 7.4]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
+      - uses: actions/checkout@v2
       - name: Setup PHP
         uses: shivammathur/setup-php@a507be7
         with:
@@ -31,4 +28,3 @@ jobs:
         run: composer install -o
       - name: Tests
         run: 'composer psalm && composer test'
-
