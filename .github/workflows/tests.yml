@@ -1,0 +1,29 @@
+name: tests
+on:
+  push:
+    branches:
+      - master
+      - feighen/*
+      - feature/*
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Code_Quality
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest]
+        php-versions: [7.2, 7.3, 7.4]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shivammathur/setup-php@a507be7
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: 'dom, json, libxml, mbstring, soap, xdebug, xml, xmlwriter'
+      - name: Composer Install
+        run: composer install -o
+      - name: Tests
+        run: 'composer all-tests'

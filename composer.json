@@ -32,8 +32,15 @@
         "vimeo/psalm": "^3.7"
     },
     "scripts": {
+        "cs": "phpcs --standard=PSR2 src/*",
+        "mess": "phpmd src,tests text codesize,design,naming,unusedcode",
         "psalm": "psalm",
-        "test": "phpunit"
+        "test": "phpunit -c ./build/phpunit.xml",
+        "all-tests": [
+            "@cs",
+            "@psalm",
+            "@test"
+        ]
     },
     "type": "package"
 }
