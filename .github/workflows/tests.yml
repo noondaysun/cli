@@ -22,7 +22,7 @@ jobs:
       - uses: shivammathur/setup-php@a507be7
         with:
           php-version: ${{ matrix.php-versions }}
-          extension-csv: 'ext-dom,xdebug'
+          extensions: 'dom, json, libxml, mbstring, soap, xdebug, xml, xmlwriter'
       - name: Composer Install
         run: composer install -o
       - name: Tests
