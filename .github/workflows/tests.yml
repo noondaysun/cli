@@ -5,15 +5,9 @@ on:
       - master
       - feighen/*
       - feature/*
-    paths:
-      - src
-      - tests
   pull_request:
     branches:
       - master
-    paths:
-      - src
-      - tests
 
 jobs:
   build:
