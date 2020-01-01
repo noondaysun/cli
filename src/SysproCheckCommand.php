@@ -17,7 +17,11 @@ class SysproCheckCommand extends Command
         $this->setName("Syspro:CheckTrips")
             ->setDescription("Check if a set of trips have posted successfully to Syspro from MAX")
             ->addArgument('BU', InputArgument::OPTIONAL, 'What Business Unit do these trips belong to?')
-            ->addArgument('Field', InputArgument::REQUIRED, 'What field do the trips correspond to? Valid options are: ID, tripNumber')
+            ->addArgument(
+                'Field',
+                InputArgument::REQUIRED,
+                'What field do the trips correspond to? Valid options are: ID, tripNumber'
+            )
             ->addArgument('Trips', InputArgument::IS_ARRAY, 'What trips do you want to check?');
     }
 

@@ -29,16 +29,15 @@ class Replication
                 try {
                     $pdo = new \PDO($conn['dsn'], $conn['user'], $conn['password']);
                     try {
+                        $sql = 'SHOW SLAVE STATUS';
+                        
                         if (preg_match('/master/', $key)) {
                             $sql = (string) 'SHOW MASTER STATUS';
-                        } else {
-                            $sql = (string) 'SHOW SLAVE STATUS';
                         }
 
                         $result = $pdo->query($sql);
                         $rows = $result->fetchAll(\PDO::FETCH_ASSOC);
-                        print_r($rows);
-
+                        
                         if (array_key_exists(0, $rows) === false) {
                             return;
                         }
@@ -65,16 +64,12 @@ class Replication
                     return ;
                 }
 
+                $sql = 'SHOW SLAVE STATUS';
+                
                 if (preg_match('/master/', $key)) {
                     $sql = (string) 'SHOW MASTER STATUS';
-                } else {
-                    $sql = (string) 'SHOW SLAVE STATUS';
                 }
             }
-            print_r($data);
         }
     }
 }
-
-$r = new Replication();
-$r::checkReplication();

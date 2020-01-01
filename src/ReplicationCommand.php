@@ -20,11 +20,12 @@ class ReplicationCommand extends Command
 
     protected function configure(): void
     {
-        $this->setName("Replication:checkReplication")->setDescription("Check replication in a mysql master::slave setup");
+        $this->setName("Replication:checkReplication")
+            ->setDescription("Check replication in a mysql master::slave setup");
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): void
     {
-        (new Replication())->checkReplication();
+        Replication::checkReplication();
     }
 }

@@ -26,4 +26,4 @@ jobs:
       - name: Composer Install
         run: composer install -o
       - name: Tests
-        run: 'composer psalm && composer test'
+        run: 'composer all-tests'
