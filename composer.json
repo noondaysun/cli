@@ -33,7 +33,7 @@
     },
     "scripts": {
         "psalm": "psalm",
-        "test": "phpunit"
+        "test": "phpunit -c ./build/phpunit.xml"
     },
     "type": "package"
 }
