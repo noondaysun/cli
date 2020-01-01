@@ -28,7 +28,7 @@ jobs:
       - uses: shivammathur/setup-php@a507be7
         with:
           php-version: ${{ matrix.php-versions }}
-          extension-csv: 'xdebug'
+          extension-csv: 'ext-dom,xdebug'
       - name: Composer Install
         run: composer install -o
       - name: Tests
